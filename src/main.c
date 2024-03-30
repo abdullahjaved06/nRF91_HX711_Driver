@@ -37,7 +37,7 @@ void measure(void) {
 }
 
 void main(void) {
-	int calibration_weight = 1000; // grams
+	int calibration_weight = 2000; /* Calibration factor is 2000 grams*/
 	hx711_dev = DEVICE_DT_GET_ANY(avia_hx711);
 	__ASSERT(hx711_dev == NULL, "Failed to get device binding");
 
